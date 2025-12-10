@@ -18,12 +18,6 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
-    install:
-      packages:
-         - keepassxc
-         - gstreamer1-plugin-openh264
-         - mozilla-openh264
-         - firefox
     remove:
       packages:
          - noopenh264 #has to be removed for firefox to be installed
@@ -31,8 +25,12 @@ modules:
   - type: dnf
     install:
       packages:
+        - keepassxc
+        - gstreamer1-plugin-openh264
+        - mozilla-openh264
         - firefox
 
+  
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
