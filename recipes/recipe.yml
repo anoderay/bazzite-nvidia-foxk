@@ -29,7 +29,7 @@ modules:
          - noopenh264 #has to be removed for firefox to be installed
          
   - type: dnf
-    install
+    install:
       packages:
         - firefox
 
