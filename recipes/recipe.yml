@@ -28,7 +28,7 @@ modules:
         - keepassxc
         - gstreamer1-plugin-openh264
         - mozilla-openh264
-        - firefox
+        #- firefox
 
   
   - type: default-flatpaks
