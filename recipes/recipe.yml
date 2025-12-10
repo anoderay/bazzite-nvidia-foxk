@@ -16,19 +16,13 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-
-  - type: dnf
-    remove:
-      packages:
-         - noopenh264 #has to be removed for firefox to be installed
          
   - type: dnf
     install:
       packages:
         - keepassxc
-        - openh264
         #- mozilla-openh264
-        #- firefox
+        - firefox
 
   
   - type: default-flatpaks
