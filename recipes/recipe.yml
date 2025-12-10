@@ -23,6 +23,7 @@ modules:
     install:
       packages:
         - keepassxc
+        - firefox
         #- mozilla-openh264
         #- firefox
 
