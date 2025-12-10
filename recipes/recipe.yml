@@ -16,14 +16,13 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-         
+
   - type: dnf
-    repos:
-      nonfree: negativo17
     install:
-    packages:
-      - keepassxc
-      - firefox
+      packages:
+        - keepassxc
+        #- mozilla-openh264
+        #- firefox
 
   
   - type: default-flatpaks
