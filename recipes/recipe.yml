@@ -25,7 +25,7 @@ modules:
       packages:
         - micro
         - starship
-        - firefox
+     #   - firefox
     #remove:
     #  packages:
         # example: removing firefox (in favor of the flatpak)
