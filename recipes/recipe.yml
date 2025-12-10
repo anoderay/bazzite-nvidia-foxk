@@ -22,14 +22,16 @@ modules:
       packages:
          - keepassxc
          - gstreamer1-plugin-openh264
-         #- mozilla-openh264
-         #- firefox
-    #remove:
-    #  packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
-        # - firefox
-        # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+         - mozilla-openh264
+         - firefox
+    remove:
+      packages:
+         - noopenh264 #has to be removed for firefox to be installed
+         
+  - type: dnf
+    install
+      packages:
+        - firefox
 
   - type: default-flatpaks
     configurations:
